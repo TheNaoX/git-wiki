@@ -1,4 +1,3 @@
-h1. Tangosource wiki
 
 This repo contains the content of a wiki, let's get started. To set up a local wiki, you need to clone this repo first
 
@@ -36,10 +35,6 @@ h2. Dependencies
 
   To install it just type the next commands
 
-  git clone https://github.com/tangosource/git-wiki.git
-
-  git checkout tango_implementation
-
   first create a gemset to work
 
   cd git-wiki
@@ -56,8 +51,6 @@ h2. Dependencies
   Now we can go inside the repository directory and add as origin this repository:
 
   located on the path ~/wiki and add a remote origin
-
-  git remote add origin git@github.com:tangosource/wiki.git
 
   git fetch
 
