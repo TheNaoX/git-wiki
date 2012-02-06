@@ -10,7 +10,7 @@ get('/') { redirect "/#{HOMEPAGE}" }
 
 get '/:page' do
   @page = Page.new(params[:page])
-  @page.tracked? ? show(:show, @page.name) : redirect('/e/' + @page.name)
+  @page.tracked? show(:show, @page.name) : redirect('/e/' + @page.name)
 end
 
 get '/:page/raw' do
@@ -110,7 +110,7 @@ end
 get '/a/delete_branch/:branch' do
   $repo.branch(params[:branch]).delete
   redirect '/a/branches'
-end
+en:gd
 
 post '/a/new_branch' do
   $repo.branch(params[:branch]).create
